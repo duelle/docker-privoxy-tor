@@ -1,9 +1,11 @@
 service1:
   image: duelle/docker-privoxy-tor
-  name: svc1
-  ports: "8119:8118"
+  container_name: svc1
+  ports: 
+    - "8119:8118"
 
 service2:
   image: duelle/docker-privoxy-tor
-  name: svc2
-  ports: "8120:8118"
+  container_name: svc2
+  ports: 
+    - "8120:8118"
