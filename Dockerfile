@@ -19,7 +19,7 @@ RUN gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | apt-key add -
 # Update and install the required tools
 RUN apt-get update && apt-get install -y privoxy tor deb.torproject.org-keyring
 
-# Run Tor and Privoxy
+# Run Tor and Privoxy with the given config files
 CMD tor -f /opt/tor/torrc && privoxy --no-daemon /opt/privoxy/config
 
 
