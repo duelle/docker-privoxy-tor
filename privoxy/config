@@ -1,2 +1,2 @@
-listen-address  0.0.0.0:8118
+listen-address  127.0.0.1:8118
 forward-socks5t   /               127.0.0.1:9050 .
